@@ -5,7 +5,7 @@ const app = express();
 const port = 8080; 
 
 //connect routes to their pages
-let index = fs.readFileSync('index.html');
+let index = fs.readFileSync('index.php');
 
 app.get('/', (req, res) => res.redirect('/index'));
 app.get('/index', (req, res) => res.end(index));
